@@ -1,0 +1,112 @@
+footer{
+    width: 100%;
+    background-color: var(--c-dark-footer);
+    padding: 1rem 0;
+}
+.footer_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+
+}
+.newsletter_footer{
+    margin: 0 0 3rem;
+}
+.newsletter_form p{
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .15625rem;
+    line-height: 1.67;
+    margin-bottom: 1rem;
+}
+.newsletter_footer input{
+    min-height: 2.3125rem;
+    margin-bottom: 0.6875rem;
+    font-size: 1.325rem;
+    border: 0;
+    border-bottom: 1px solid var(--c-font);
+    background-color: transparent;
+    padding-left: 0.625rem;
+    padding-right: 6.5625rem;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.newsletter_form button{
+    background-color: transparent;
+    padding: 1.5px;
+    border: 0;
+    margin-left: -3rem;
+    cursor: pointer;
+    font-size: .8875rem;
+    line-height: 1.82;
+    letter-spacing: 2.29px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Pathway Gothic One', sans-serif;
+    align-items: center;
+}
+.footer_redes{
+    margin-top: .5rem;
+    color: var(--c-font);
+    font-size: 1.5rem;
+}
+.footer_redes span{
+    padding: 0 0.90rem;
+}
+.info_footer{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+.about_footer h5{
+    color: var(--c-font);
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.about_footer li{
+    list-style: none;
+    font-size: .9rem;
+    line-height: 1.82;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.copyright{
+    display: flex;
+    gap: 1rem;
+}
+.copyright .logo{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.2rem;
+    color: var(--c-font);
+}
+.copyright span{
+    font-size: x-small;
+    margin: .40rem;
+}
+/*media queries*/
+@media (min-width: 300px) and (max-width:880px){
+    .footer_main{
+        grid-template-columns: 1fr;
+    }
+    .newsletter_form p{
+        font-size: .50rem;
+    }
+    .newsletter_form input{
+        min-height: 1.3125rem;
+       font-size: large;
+    }
+    .footer_redes{
+        margin-bottom: -6rem;
+    }
+    .info_footer{
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }   
+    .about_footer li{
+        margin-bottom: .5rem;
+    }
+
+}
