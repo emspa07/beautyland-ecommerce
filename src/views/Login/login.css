@@ -1,0 +1,92 @@
+.login_main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap:3rem;
+    margin: 3rem;
+}
+.form_login{
+    display: flex;
+    flex-direction: column;
+}
+.login_title{
+    font-size: 2rem;
+    color: var(--c-font);
+}
+.form_login input{
+    border: 0;
+    border-bottom: 1px solid var(--c-font);
+    margin: 1rem -2rem;
+    min-height: 2.125rem;
+    font-size: 1.225rem;
+    background-color: transparent;
+    padding-left: 0.625rem;
+    padding-right: 6.5625rem;
+}
+.login_btn{
+    margin: 1.3rem -2rem;
+    padding: .8rem;
+    border: 2px solid #021F47;
+    color: #021F47;
+    background-color: transparent;
+    font-weight: bold;
+}
+.login_btn:hover{
+    background: #021F47;
+    color: white;
+}
+.division_login hr{
+    height:40vh;
+    width:.2vw;
+    color: #021F47;
+    background-color: #021F47;
+    margin: 0 10rem
+}
+.signup_section{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.sign_btn{
+    margin: 3rem -2rem;
+    padding: .8rem;
+    border: 2px solid #021F47;
+    background-color: transparent;
+    font-weight: bold;
+}
+.sign_btn:hover{
+    background: #021F47;
+}
+.signup{
+    text-decoration: none;
+    color: black;
+}
+.signup:hover{
+    color: white;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+    .login_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem;
+        gap: 1rem;
+    }
+    .login_title{
+        font-size: 1.5rem;
+    }
+    .form_login input{
+        margin: 1rem -1rem;
+        font-size: 1rem;
+
+    }
+    .login_btn{
+        margin: 1rem -1rem;        
+    }
+    .division_login{
+        height: 0vh;
+        opacity: 0;
+    }
+    .sign_btn{
+        margin: 1rem 2rem;
+    }
+}

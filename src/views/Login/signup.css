@@ -1,0 +1,49 @@
+.form_signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.signup_title{
+    font-size: 2rem;
+    margin: 2rem;
+    color: var(--c-font);
+}
+.form_signup input{
+    border: 0;
+    border-bottom: 1px solid var(--c-font);
+    margin-bottom: 1.3rem;
+    min-height: 2.3125rem;
+    font-size: 1.225rem;
+    background-color: transparent;
+    padding-left: 0.625rem;
+    padding-right: 6.5625rem;
+}
+.signup_btn{
+    padding: .5rem 8rem;
+    background-color: var(--c-font);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.signup_btn:hover{
+    background-color:#023684;
+    transition: all 100ms ease-in-out;
+}
+.signup_message{
+    color: var(--c-font);
+}
+.signup_message:hover{
+    color:#023684;
+    transition: all 100ms ease-in-out;
+}
+@media (min-width: 300px) and (max-width: 880px) {
+    .form_signup input{
+        font-size: 1rem;
+        padding-right: 4rem;
+    }
+    .signup_btn{
+        padding: .5rem 5rem;
+    }
+}

@@ -26,7 +26,6 @@ header{
 .nav_logo{
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 2.5rem;
-    color: var(--c-font)
 }
 .li_items{
     display: inline-block;
@@ -34,7 +33,15 @@ header{
     padding: 0 0.8rem;
     font-size: 1.3rem;
     color: var(--c-font);
-
+}
+.link_items{
+    text-decoration: none;
+    color: var(--c-font);
+}
+.link_items:hover{
+    font-weight: bold;
+    color:#023684;
+    transition: all 100ms ease-in-out;
 }
 /*media queries*/
 @media (min-width: 300px) and (max-width:880px){

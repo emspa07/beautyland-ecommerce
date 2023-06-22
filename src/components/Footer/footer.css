@@ -51,6 +51,11 @@ footer{
 }
 .footer_redes span{
     padding: 0 0.90rem;
+    cursor: pointer;
+}
+.footer_redes span:hover{
+    color:#023684;
+    transition: all 100ms ease-in-out;
 }
 .info_footer{
     display: flex;

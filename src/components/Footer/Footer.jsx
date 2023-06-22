@@ -3,7 +3,7 @@ import React from "react";
 import {FaFacebook, FaTwitter, FaWhatsapp, FaInstagram} from "react-icons/fa";
 
 //Estilos
-import './css/footer.css'
+import '../Footer/footer.css'
 
 function Footer (){
     return(
