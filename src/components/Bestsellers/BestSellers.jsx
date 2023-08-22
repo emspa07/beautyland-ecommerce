@@ -1,41 +1,37 @@
 import React from "react";
-import Products from "../Products/Products";
+import styled from "styled-components";
+import { bestSellers } from "../../data";
+import BestSeller from "./BestSeller";
+import { mobile } from "../../responsive";
 
-import '../Bestsellers/bestsellers.css'
 
+const Container = styled.section`
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+${mobile({padding: "0"})}
 
-function BestSellers(){
+`;
+const HeadBest = styled.div`
+display:flex;
+align-items:center;
+`;
+const TitleBest = styled.h2`
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 3rem;
+color: var(--c-font);
+margin:1.5rem;
+`;
+
+const BestSellers = () => {
     return (
-        <section className="beauty_container wrapper">
-            <div className="wrapper_title">
-                <h2 className="head_title">
-                    Preferidos de Beauty Land
-                </h2>
-            </div>
-            <div className="best_cards">
-                <Products 
-                img={'https://res.cloudinary.com/doo2bx7qe/image/upload/v1686626052/9ecd8828-c16c-5fe6-b94e-96ffa99f2fc0_zb6fha.jpg'}
-                title="RARE BEAUTY"
-                description="Sombras para ojos"
-                price="$775" />
-                <Products
-                img={'https://res.cloudinary.com/doo2bx7qe/image/upload/v1686626052/Nudestix_MiniNudiesSet_Lifestyle_Desktop_pqsdd5.jpg'}
-                title="NUDESTIX"
-                description="Kit Beachy Nudes"
-                price="$770" />
-                <Products
-                img={'https://res.cloudinary.com/doo2bx7qe/image/upload/v1686626052/Drunk_Elephant_Retinol_d1bzfh.jpg'}
-                title="Drunk Elephant"
-                description="Suero facial de noche"
-                price="$1,500" />
-                <Products
-                img={'https://res.cloudinary.com/doo2bx7qe/image/upload/v1686626052/0168625_flower-by-kenzo-ikebana_hw7ie1.jpg'}
-                title="KENZO"
-                description="FLOWER BY KENZO Ikebana"
-                price="$1,660" />      
-            </div>        
-            
-    </section>
+        <Container>
+            <HeadBest>
+             <TitleBest>Favoritos Beauty Land</TitleBest>                
+            </HeadBest>
+                {bestSellers.map((item) => (<BestSeller item={item} key={item.id} />))}
+        </Container>
     )
     }
     export default BestSellers

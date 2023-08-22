@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {mobile} from '../../responsive';
 
 const Container = styled.div`
 width: 100%;
@@ -7,6 +8,8 @@ display: flex;
 position: relative;
 overflow: hidden;
 background-color: var(--color-light-primary);
+${mobile({ display: 'none'})}
+
 `;
 const Arrow = styled.div`
   width: 50px;
@@ -72,6 +75,11 @@ const ButtonSlider = styled.button`
   background-color: transparent;
   border-color: var(--c-font);
   cursor: pointer;
+  &:hover {
+    background: #021F47;
+    color: white;
+    transform: scale(1.1);
+  }
 `;
 
 export{Container, Arrow, Wrapper, Slide, ImgContainer, Image, InfoContainer, TitleSlider, DescSlider, ButtonSlider}
