@@ -14,6 +14,7 @@ export const Cart = () => {
                     <UpperButton>Continúe explorando</UpperButton>
                     <UpperTexts>
                         <UpperText>Carrito de compra(0)</UpperText>
+                        <UpperText>Tu Wishlist(0)</UpperText>
                     </UpperTexts>
                     <UpperButton type="filled">Proceder al pago</UpperButton>
                 </Upper>

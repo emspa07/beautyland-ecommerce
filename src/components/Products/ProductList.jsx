@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Card from "../Card/Card";
-
+import {mobile} from '../../responsive'
 
 const ProductWrapper = styled.section``;
 const FilterContainer = styled.div`
@@ -15,11 +15,13 @@ const FilterText = styled.span`
   font-weight: 600;
   color:var(--c-font);
   margin-right: 20px;
+  ${mobile({ fontSize: '18px'})}
 `;
 
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
+  ${mobile({ marginTop: '1em'})}
 `;
 const Option = styled.option``;
 

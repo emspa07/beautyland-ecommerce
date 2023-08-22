@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {mobile} from '../../responsive';
 
 const ContainerAnnouncement = styled.section`
     height: 30px;
@@ -8,6 +9,7 @@ const ContainerAnnouncement = styled.section`
     justify-content: center;
     color: var(--c-font);
     font-weight: bold;
+    ${mobile({fontSize: "12px"})}
 `;
 
 
