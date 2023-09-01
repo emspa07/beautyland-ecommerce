@@ -26,7 +26,7 @@ export const Login = () =>{
             const response = await axios.post('http://127.0.0.1:5500/users/login', input)
             if (!response.data.isAuth) return alert(response.data.message)
             saveUser(input)
-            return navigate('/dashboard')            
+            return navigate('/')            
         } catch (error) {
             alert('Verifica tus credenciales')
         }

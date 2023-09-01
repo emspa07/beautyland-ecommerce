@@ -1,19 +1,23 @@
 import React from "react"
-import { CardDescription, CardImage, CardWrapper } from "./elementsCard"
+import { CardDescription, CardSection, CardImage, CardWrapper } from "./elementsCard"
 import Button from "../Button/Button"
+import { products } from "../../data"
 
-
-const Card = ({img, title, description, price}) =>{
+const Card = () =>{
     return(
         <CardWrapper>
-            <CardImage src={img}/>
-            <CardDescription>
-                <h3>{title}</h3>
-                <br/>
-                <p>{description}</p>
-                <span>{price}</span>
-            </CardDescription>
-            <Button title="Añadir al carrito"/>
+            {products.map((item) =>(
+            <CardSection key={item.id}>
+                <CardImage src={item.img}/>
+                <CardDescription>
+                            <h3>{item.title}</h3>
+                            <br/>
+                            <p>{item.description}</p>
+                            <span>{item.price}</span>
+                </CardDescription>
+                <Button title="Añadir al carrito"/>
+            </CardSection>
+            ))}
         </CardWrapper>
     )
 }

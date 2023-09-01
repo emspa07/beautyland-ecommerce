@@ -32,6 +32,7 @@ const UpperTexts = styled.div`
     ${mobile({ display: 'none'})}
 `;
 const UpperText = styled.span`
+    margin:50px;
     text-decoration: underline; 
     cursor: pointer;
 `;
@@ -107,7 +108,7 @@ const ShopSummary = styled.div`
     border: 0.5px solid lightgray;
     border-radius: 10px;
     padding: 20px;
-    height: 50vh;
+    height: auto;
 `;
 const SummaryTitle = styled.h2`
     font-weight: 200;

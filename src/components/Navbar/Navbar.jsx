@@ -27,7 +27,7 @@ function Navbar (){
                     <div className='items'>
                         <ul className='nav_items'>
                         <li className='li_items'><Link to="/login" className='link_items'><FaFemale/></Link></li>
-                        <li className='li_items'><Link to="/cart"><FaShoppingBag/></Link></li>
+                        <li className='li_items'><Link to="/cart" className='link_items'><FaShoppingBag/></Link></li>
                         </ul>                    
                     </div>
                 </div>
